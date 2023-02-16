@@ -83,33 +83,65 @@
  use these in line 81 and 83
 */
 
-// l16 - functions and scoping
-function sayHello() {
-  console.log("Hello")
-}
-sayHello()
+// // l16 - functions and scoping
+// function sayHello() {
+//   console.log("Hello")
+// }
+// sayHello()
 
+// function sum(a, b) {
+//   return a + b
+// }
+
+// let number1 = 1
+// let number2 = 2
+// let sum1 = sum(number1, number2)
+// console.log(sum1)
+
+// function helloName(name) {
+//   return "Hello " + name
+// }
+// console.log(helloName("v"))
+
+// // l17 - pass function to another function
+// function func1(variable1) {
+//   console.log(variable1)
+// }
+
+// function func2(funcpass) {
+//   funcpass("hello")
+// }
+
+// func2(func1)
+
+// l18 - arrow functions
 function sum(a, b) {
   return a + b
 }
+console.log(sum(1, 2))
 
-let number1 = 1
-let number2 = 2
-let sum1 = sum(number1, number2)
-console.log(sum1)
-
-function helloName(name) {
-  return "Hello " + name
+let sumArrow = (a, b) => {
+  return a + b
 }
-console.log(helloName("v"))
+console.log(sumArrow(1, 2))
 
-// l17 - pass function to another function
-function func1(variable1) {
-  console.log(variable1)
+let sumArrowInOneLine = (a, b) => {
+  return a + b
+}
+console.log("arrowFunc in one line: 1+2=" + sumArrowInOneLine(1, 2))
+
+let nameArrow = name => {
+  return name
+}
+console.log(nameArrow("v"))
+
+let hiName = name => "hi " + name + "!"
+
+console.log(hiName("v"))
+
+// a function calling callback arrow function
+function func(x, callback) {
+  callback(x)
 }
 
-function func2(funcpass) {
-  funcpass("hello")
-}
-
-func2(func1)
+func(10, variable => console.log(variable))
