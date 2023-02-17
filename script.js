@@ -114,34 +114,123 @@
 
 // func2(func1)
 
-// l18 - arrow functions
-function sum(a, b) {
-  return a + b
-}
-console.log(sum(1, 2))
+// // l18 - arrow functions
+// function sum(a, b) {
+//   return a + b
+// }
+// console.log(sum(1, 2))
 
-let sumArrow = (a, b) => {
-  return a + b
-}
-console.log(sumArrow(1, 2))
+// let sumArrow = (a, b) => {
+//   return a + b
+// }
+// console.log(sumArrow(1, 2))
 
-let sumArrowInOneLine = (a, b) => {
-  return a + b
-}
-console.log("arrowFunc in one line: 1+2=" + sumArrowInOneLine(1, 2))
+// let sumArrowInOneLine = (a, b) => {
+//   return a + b
+// }
+// console.log("arrowFunc in one line: 1+2=" + sumArrowInOneLine(1, 2))
 
-let nameArrow = name => {
-  return name
-}
-console.log(nameArrow("v"))
+// let nameArrow = name => {
+//   return name
+// }
+// console.log(nameArrow("v"))
 
-let hiName = name => "hi " + name + "!"
+// let hiName = name => "hi " + name + "!"
 
-console.log(hiName("v"))
+// console.log(hiName("v"))
 
-// a function calling callback arrow function
-function func(x, callback) {
-  callback(x)
-}
+// // a function calling callback arrow function
+// function func(x, callback) {
+//   callback(x)
+// }
 
-func(10, variable => console.log(variable))
+// func(10, variable => console.log(variable))
+
+// // l19 - debug
+
+// let doStuff = (a, b, name) => {
+//   print(sum(a, b))
+//   print(sayHi(name))
+// }
+// debugger
+// let print = variable => {
+//   console.log(variable)
+// }
+
+// let sum = (a, b) => a + b
+// let sayHi = name => "Hi " + name + "!"
+
+// doStuff(1, 2, "v")
+
+// // l20 - hoisting
+
+// console.log(hoistCheck("checked"))
+// function hoistCheck(variable) {
+//   return variable
+// }
+// console.log(arrowHoist("check"))
+// let arrowHoist = variable => variable
+
+// // l21 - Idea of scope
+// let a = 1
+// console.log(b)
+// {
+//   let b = 2
+//   console.log(c)
+//   {
+//     let c = 3
+//     console.log(a)
+//     console.log(b)
+//     console.log(c)
+//   }
+// }
+
+// // l22 - closure
+
+// function print(variable) {
+//   let c = 3
+//   return function func(variable2) {
+//     console.log(variable)
+//     console.log(variable2)
+//     console.log(c)
+//   }
+// }
+// let a = print(1)
+
+// console.log(a)
+// a(2)
+
+// l23 - const
+// const a = 1
+// console.log(a)
+
+// l24 - var
+// console.log(a)
+// var a = 1
+// console.log(a)
+
+// l25 - type conversion
+// let a = "1"
+// console.log(a)
+// console.log(typeof a)
+// a = parseInt(a)
+// console.log(a)
+// console.log(typeof a)
+// let b = "1.3"
+// console.log(b)
+// console.log(typeof b)
+// b = parseFloat(b)
+// console.log(b)
+// console.log(typeof b)
+
+// let number = 1
+// let wordString = "hello"
+// console.log(wordString + number) // number is converted in to a string for concatenation
+
+// let number1 = 1
+// let string1 = "1"
+// console.log(number1 == string1) // + sign converts number to a string
+
+// let number2 = 2
+// let string2 = "3"
+// console.log(string2 - number2) // - sign converts string to a number
