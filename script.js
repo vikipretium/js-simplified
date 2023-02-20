@@ -234,3 +234,27 @@
 // let number2 = 2
 // let string2 = "3"
 // console.log(string2 - number2) // - sign converts string to a number
+
+// l26 - check equality
+
+// let a = 1
+// let b = "1"
+// console.log(a == b) // converts value
+// console.log(a === b) // check strictly the type of value without converting values
+
+// let number = 0
+// let bool = false
+// console.log(number == bool) // here bool is converted into 0 (number)
+// console.log(number === bool) // checks the type of value
+
+// let value1 = null
+// let value2 = undefined
+
+// console.log(value1 == value2)
+// console.log(value1 === value2)
+
+// l27 - NaN - side effect of type conversion
+const a = "1"
+const b = "asdfasdf"
+console.log(typeof parseInt(a))
+console.log(parseInt(b))
