@@ -254,7 +254,16 @@
 // console.log(value1 === value2)
 
 // l27 - NaN - side effect of type conversion
-const a = "1"
-const b = "asdfasdf"
-console.log(typeof parseInt(a))
-console.log(parseInt(b))
+// const a = "1"
+// const b = "asdfasdf"
+// console.log(typeof parseInt(a))
+// console.log(parseInt(b)) // b is not a number (NaN)
+// console.log(b == NaN) // log will be false
+// console.log(b === NaN) // strict check will also be false
+// // to check NaN, need to use inbuild function
+// const c = parseInt("asdfasdf")
+// console.log(c)
+// console.log(isNaN(c)) // this inbuilt function will return the correct answer.
+// const d = 1
+// console.log(d)
+// console.log(isNaN(d)) // d is a number so its false
