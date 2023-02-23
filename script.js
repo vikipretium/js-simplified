@@ -267,3 +267,27 @@
 // const d = 1
 // console.log(d)
 // console.log(isNaN(d)) // d is a number so its false
+
+// l28 - Arrays
+// const a = [1, 2, 3, 4, 5, 6, 7, 8]
+// console.log(a)
+// console.log(a[0])
+// console.log(a[1])
+// a.push(9)
+// console.log(a)
+// a.push("string")
+// console.log(a)
+// const b = [
+//   [1, 2],
+//   [3, 4],
+// ]
+// console.log(b)
+// const c = [5, 6]
+// b.push(c)
+// console.log(b)
+// console.log(b[(0, 0)]) // accessing an array inside an array.
+// console.log(b[0][1]) // accessing an element inside nested array.
+
+// // length of an array
+// console.log("array a length:" + a.length)
+// console.log("array b length:" + b.length)
