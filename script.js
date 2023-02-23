@@ -291,3 +291,71 @@
 // // length of an array
 // console.log("array a length:" + a.length)
 // console.log("array b length:" + b.length)
+
+// l29 - objects
+
+// let fishName = "sardine"
+// let type = "indian sardine"
+// let weight = 10
+
+// let fish = { fishName: "sardine", breed: "indian", weight: 10 } // creating an object in js
+// console.log(fish)
+
+// // accessing values from the object
+// console.log(fish.fishName)
+// console.log(fish.weight)
+// console.log(fish.breed)
+
+// // console itself is a object and .log is a function
+// console.log(console)
+
+// // adding a function inside the fish object
+
+// fish = {
+//   fishName: "sardine",
+//   breed: "indian",
+//   weight: 10,
+//   hi: function () {
+//     console.log("hi from sardine")
+//   },
+// }
+
+// // calling the hi function inside the fish object
+// fish.hi()
+
+// // adding a function inside the object without a property
+// fish = {
+//   fishName: "sardine",
+//   breed: "indian",
+//   weight: 10,
+//   hi: function () {
+//     console.log("hi from sardine")
+//   },
+//   // no need to add a property or function keyword inside an object
+//   hello() {
+//     console.log("hello from sardine")
+//   },
+// }
+
+// fish.hello()
+
+// // another interesting way to access an objects property
+
+// let property = "fishName"
+
+// console.log(fish[property])
+
+// let book = {
+//   title: "some book",
+//   author: { name: "some name", age: "some age" },
+// }
+
+// console.log(book.title)
+// console.log(book.author.name)
+// console.log(book.author.age)
+
+// // changing a property value
+
+// book.title = "new name"
+
+// console.log(book.title)
