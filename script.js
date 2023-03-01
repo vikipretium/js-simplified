@@ -359,3 +359,35 @@
 // book.title = "new name"
 
 // console.log(book.title)
+
+// l30 - array objects and memory
+
+// let a = [1, 2]
+// let b = a
+// a.push(3)
+// b.push(4)
+// console.log("a: " + a)
+// console.log("b: " + b)
+
+// let c = { name: "v" }
+// let d = c
+// d.name = "w"
+// console.log("c: " + JSON.stringify(c))
+// console.log("d: " + JSON.stringify(d))
+
+// let array1 = [1, 2] // address: 0x01
+// let array2 = [1, 2] // address: 0x02
+
+// console.log(array1 === array2) // this check whether the address are same or not.
+
+// const array3 = [1, 2]
+// const element = 3
+
+// add(array3, element)
+
+// console.log(array3)
+// console.log(element)
+// function add(array, elementAdd) {
+//   elementAdd = elementAdd + 1
+//   array.push(elementAdd)
+// }
