@@ -486,12 +486,75 @@
 // l32 - backtick way to use string
 
 // normal string example
-let a = "hi"
-console.log(a)
+// let a = "hi"
+// console.log(a)
+//
+// // backtick example
+// let b = "coder!"
+// let backtick = `${a} ${b}` // anything js code ${ } inbetween curls will work.
+// console.log(backtick)
 
-// backtick example
-let b = "coder!"
-let backtick = `${a} ${b}` // anything js code ${ } inbetween curls will work.
-console.log(backtick)
+// l33 - this keyword
+// normal way to create objects
+function createUser(name, age) {
+  return { name: name, age: age }
+}
+
+const user = createUser("a", 1)
+console.log(user)
+
+// example of create object using new keyword
+const date = new Date()  // Date() is constructor, can used repeatedly. 
+console.log(date)
+console.log(date.getDay())
+console.log(date.getDate())
+console.log(date.getMonth())
+console.log(date.getFullYear())
+
+// writing constructor 
+function User(name, age) {
+  return { name: name, age: age, human: true }
+}
+
+const person1 = new User("aeolian", "unknown")
+console.log("===== normal user ======")
+console.log(person1)
+
+function User1(name, age) {
+  //this = {} // this line object is created behind scenes
+  this.name = name
+  this.age = age
+  this.human = true
+  // return this // this line is return behind scenes
+}
+
+const person2 = new User1("BlackJack", 21)
+console.log("===== constructor user1 =====")
+console.log(person2)
+console.log("the difference between normal function user and constructor user1 is: user1 has a type")
+
+// classes
+console.log("====================================================")
+console.log("using classes is similar to this and constructor way")
+
+class User2 {
+  constructor(name, age) {
+    this.name = name
+    this.age = age
+    this.human = true
+  }
+  printName() {
+    console.log(this.name)
+  }
+  printAge() {
+    console.log(this.age)
+  }
+}
+
+const person3 = new User2("Creed", 30)
+console.log(person3)
+person3.printName()
+person3.printAge()
+console.log("funtion user1 and class user2, both works same- no difference")
 
 
