@@ -79,7 +79,7 @@
 
 // l15 - comments
 /*
- for multi line comment use 
+ for multi line comment use
  use these in line 81 and 83
 */
 
@@ -395,90 +395,103 @@
 // l31 - Handy array methods
 
 // foreach
-console.log("==== foreach() function ====")
-const a = [1, 2, 3, 4, 5]
-console.log("array a", a)
+// console.log("==== foreach() function ====")
+// const a = [1, 2, 3, 4, 5]
+// console.log("array a", a)
+//
+// a.forEach((number, index) => {
+//   console.log(number, index, "foreach() number and index")
+// })
+// //map
+// console.log("==== map() function ====")
+// const newa = a.map(number => {
+//   return number * 2
+// })
+// console.log(a + " old a")
+// console.log("old a is 2 timed")
+// console.log(newa + " new a")
+// // filter
+// console.log("==== filter() function ====")
+// const filtered = newa.filter(number => {
+//   return true
+// })
+// console.log(filtered + " filtered new a")
+// // filter number >= 6
+// const newFiltered = newa.filter(number => {
+//   if (number >= 6) {
+//     return true
+//   }
+// })
+// console.log(newFiltered + " filtered greater than number 6 new a")
+//
+// // some() - checks if any value is matching the condition, return true.
+// console.log("==== some() function ====")
+// const isTrue = a.some(number => {
+//   return number > 4
+// })
+// console.log(isTrue)
+// isFalse = a.some(number => {
+//   return number > 7
+// })
+// console.log(isFalse)
+//
+// //every 
+// console.log("==== every() function ====")
+// const isEverythingMatch = a.every(number => {
+//   return number > 3
+// })
+// console.log(isEverythingMatch, "checked every number of a is greater than 3")
+//
+// const isEverythingMatch1 = a.every(number => {
+//   return number < 10
+// })
+// console.log(isEverythingMatch1, "checked every number of a is lesser than 10")
+//
+// //reduce funtion
+// console.log("==== reduce() function ====")
+// const b = [1, 2]
+//
+// const suma = a.reduce((sum, number) => {
+//   return sum + number
+// }, 0)//this 0 is initial value of sum in reduce funtion
+// console.log(suma, "reduce sum of array a")
+//
+// const sumb = b.reduce((sum, number) => {
+//   return sum + number
+// }, 0)//this 0 is initial value of sum in reduce funtion
+// console.log(sumb, "reduce sum of array b")
+//
+// const items = [
+//   { price: 100 },
+//   { price: 100 },
+//   { price: 100 },
+//   { price: 100 },
+//   { price: 100 },
+// ]
+// const sumOfArrayObject = items.reduce((sum, object) => {
+//   console.log(object)
+//   return sum + object.price
+//
+// }, 0)
+// console.log(sumOfArrayObject, "sum of items array with objects")
+//
+// //includes function
+// console.log("==== inclues() function ====")
+// let checkArrayIncludes = a.includes(2)
+// console.log(a, "array a")
+// console.log(checkArrayIncludes, "checks array a inclues number 2")
+// checkArrayIncludes = a.includes(10)
+// console.log(checkArrayIncludes, "checks array a inclues number 10")
 
-a.forEach((number, index) => {
-  console.log(number, index, "foreach() number and index")
-})
-//map
-console.log("==== map() function ====")
-const newa = a.map(number => {
-  return number * 2
-})
-console.log(a + " old a")
-console.log("old a is 2 timed")
-console.log(newa + " new a")
-// filter
-console.log("==== filter() function ====")
-const filtered = newa.filter(number => {
-  return true
-})
-console.log(filtered + " filtered new a")
-// filter number >= 6
-const newFiltered = newa.filter(number => {
-  if (number >= 6) {
-    return true
-  }
-})
-console.log(newFiltered + " filtered greater than number 6 new a")
+// l32 - backtick way to use string
 
-// some() - checks if any value is matching the condition, return true.
-console.log("==== some() function ====")
-const isTrue = a.some(number => {
-  return number > 4
-})
-console.log(isTrue)
-isFalse = a.some(number => {
-  return number > 7
-})
-console.log(isFalse)
+// normal string example
+let a = "hi"
+console.log(a)
 
-//every 
-console.log("==== every() function ====")
-const isEverythingMatch = a.every(number => {
-  return number > 3
-})
-console.log(isEverythingMatch, "checked every number of a is greater than 3")
+// backtick example
+let b = "coder!"
+let backtick = `${a} ${b}` // anything js code ${ } inbetween curls will work.
+console.log(backtick)
 
-const isEverythingMatch1 = a.every(number => {
-  return number < 10
-})
-console.log(isEverythingMatch1, "checked every number of a is lesser than 10")
 
-//reduce funtion
-console.log("==== reduce() function ====")
-const b = [1, 2]
-
-const suma = a.reduce((sum, number) => {
-  return sum + number
-}, 0)//this 0 is initial value of sum in reduce funtion
-console.log(suma, "reduce sum of array a")
-
-const sumb = b.reduce((sum, number) => {
-  return sum + number
-}, 0)//this 0 is initial value of sum in reduce funtion
-console.log(sumb, "reduce sum of array b")
-
-const items = [
-  { price: 100 },
-  { price: 100 },
-  { price: 100 },
-  { price: 100 },
-  { price: 100 },
-]
-const sumOfArrayObject = items.reduce((sum, object) => {
-  console.log(object)
-  return sum + object.price
-
-}, 0)
-console.log(sumOfArrayObject, "sum of items array with objects")
-
-//includes function
-console.log("==== inclues() function ====")
-let checkArrayIncludes = a.includes(2)
-console.log(a, "array a")
-console.log(checkArrayIncludes, "checks array a inclues number 2")
-checkArrayIncludes = a.includes(10)
-console.log(checkArrayIncludes, "checks array a inclues number 10")
